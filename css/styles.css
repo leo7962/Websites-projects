@@ -102,3 +102,11 @@ header .masthead h1 {
     width: 70%;
     text-align: center;
 }
+
+h3 .text-white .h4{
+   position:absolute;
+   background: blue;
+   margin-top: 15%;
+   height: 16%;
+   width: 16%;
+}
