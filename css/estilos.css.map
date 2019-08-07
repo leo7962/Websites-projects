@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAQA,UAAU;EACN,MAAM,EAAE,aAAa;;AAGzB,IAAI;EACA,MAAM,EAAE,cAAc;;AAG1B,QAAM;EACF,MAAM,EAAE,eAAe",
+"mappings": "AAQA,UAAU;EACN,MAAM,EAAE,aAAa;;AAOzB,QAAM;EACF,MAAM,EAAE,aAAa",
 "sources": ["../scss/estilos.scss"],
 "names": [],
 "file": "estilos.css"

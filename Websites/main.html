@@ -1,278 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta http-equiv="X-UA-Compatible" content="IE=7">
-        <meta name="description" content="This a Index page for the web and differtents devices">
-        <meta name="author" content="Leonardo Fabián Hernández Peña">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi pagina</title>
 
-        <title>My Charity</title>
+    <!--Aplicando estilos css-->
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/estilos.css">
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic'
-            rel='stylesheet' type='text/css'>
+    <!--Cargando los archivos Jquery y JavaScript-->
+    <script src="../jquery/jquery-3.4.1.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
 
-        <!--Estilos CSS-->
-        <link rel="stylesheet" href="">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-ligth">
+        <a class="navbar-brand" href="#"><img src="../Images_web/logotipo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <!--Llamado a paquetes de Bootstrap-->
-        <link rel="stylesheet" href="/">
-
-        <style>
-            body {
-                margin: 0;
-            }
-
-            .content {
-                display: flex;
-                flex-direction: row;
-                height: 500px;
-                width: 900px;
-                margin: 0 auto;
-            }
-
-            .content-left {
-                flex-grow: 2;
-                background-color: cadetblue;
-                display: flex;
-                flex-direction: column;
-                flex-basis: 0;
-            }
-
-            .content-right {
-                flex-grow: 1;
-                background-color: brown;
-                display: flex;
-                flex-direction: column;
-            }
-
-            .cont {
-                border-bottom: 2px solid #000;
-                flex-grow: 1;
-            }
-
-            .cont-2 {
-                flex-grow: 2;
-            }
-
-            .row-cont {
-                display: flex;
-                flex-direction: row;
-            }
-
-            .text {
-                width: 70%;
-                /* background-color: rgba(255, 255, 255, .6); */
-                text-align: center;
-            }
-        </style>
-    </head>
-
-    <body id="page-top">
-
-        <!-- Navegación-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container">
-                <a href="#page-top" class="navbar-brand js-scroll-trigger">My Charity</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item">
-                            <a href="#Home" class="nav-link js-scroll-trigger">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Aboutus" class="nav-link js-scroll-trigger">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link js-scroll-trigger">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Blog" class="nav-link js-scroll-trigger">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Events" class="nav-link js-scroll-trigger">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Gallery" class="nav-link js-scroll-trigger">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#ContactUs" class="nav-link js-scroll-trigger">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!--Header de Bienvenida-->
-        <header class="masthead">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-10 align-self-end">
-                        <h1 class="text-uppercase text-white font-weight-bold">Welcome to My Charity</h1>
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-50 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
-                            Nulla sit amet massa et ex ultricies sollicitudin sit amet quis metus.</p>
-                        <a href="#services" class="btn btn-primary btn-xl js-scroll-trigger">Donate</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!--Flex section-->
-        <div class="content">
-            <div class="content-left">
-                <div class="cont row-cont">
-                    <div class="text">
-                        <h2 class="text-white mt-0">My charity</h2>
-                    </div>
-                </div>
-                <div class="cont">
-                    <div class="col-lg-8 col-md-9 text-center">
-                        <h3 class="text-white h4 mb-2">Sign up to newsletter</h2>
-                            <div class="input-group">
-                                <input type="email" class="form-control" placeholder="Enter your email">
-                                <span class="input-group-btn">
-                                    <button class="btn" type="submit">Subscribe</button>
-                                </span>
-                            </div>
-                            <p class="text-right text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                vel posuere tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                                semper, velit.</p>
-                    </div>
-                </div>
-                <div class="cont">
-
-                </div>
-            </div>
-            <div class="content-right">
-                <div class="cont">
-                    <div class="text justify-content-center text-center">
-                        <h3 class="text-white mt-0">Donate Now!</h2>
-                            <p class="text-white-50 mb-4">Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-                <div class="cont cont-2">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <h3 class="text-white h4 mb-2">Like Now</h3>
-                        </div>
-                    </div>
-                </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="##" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="##" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="##" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="##" class="nav-link">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <!-- A fluid container that uses the full witdh -->
+        <div class="row">
+            <!-- col- elements here -->
+            <div class="col-12">
+                <h1 class="text-center">Hola</h1>
             </div>
         </div>
+    </div>
 
-        <!--Our Events-->
-        <section class="page-section" id="events">
-            <div class="container">
-                <h2 class="text-center mt-0">Our Events</h2>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-
-                            <h4 class="text-danger">October</h4>
-
-                            <h5 class="h4 mb-2">Lorem ipsum dolor sit amet, consectetur.</h4>
-                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Fusce
-                                    tincidunt venenatis molestie. Integer rhoncus quis metus in sollicitudin. Curabitur
-                                    ante
-                                    risus.</p>
-                                <br>
-                                <button type="button" class="btn btn-danger">Action</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text center">
-                        <div class="mt-5">
-
-                            <h4 class="text-danger">October</h4>
-
-                            <h5 class="h4 mb-2">Lorem ipsum dolor sit amet, consectetur.</h4>
-                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Fusce
-                                    tincidunt venenatis molestie. Integer rhoncus quis metus in sollicitudin. Curabitur
-                                    ante
-                                    risus.</p>
-                                <br>
-                                <button type="button" class="btn btn-danger">Action</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text center">
-                        <div class="mt-5">
-
-                            <h4 class="text-danger">October</h4>
-
-                            <h5 class="h4 mb-2">Lorem ipsum dolor sit amet, consectetur.</h4>
-                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Fusce
-                                    tincidunt venenatis molestie. Integer rhoncus quis metus in sollicitudin. Curabitur
-                                    ante
-                                    risus.</p>
-                                <br>
-
-                                <button type="button" class="btn btn-danger">MORE</button>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <!--Footer section-->
-        <footer class="bg-dark">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light py-3">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-center text-white">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-center text-muted">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-muted">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-muted">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-muted">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-muted">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-muted">Contact Us</a>
-                        </li>
-                    </ul>
-                    <hr class="divider my-4">
-                </nav>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="text-center text-white">Follow Us</div>
-
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="text-center text-white">News Letter</div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="text-center text-white text-right mb-5">Contact Us</div>
-                        <p class="text-right text-muted mb-1">Address</p>
-                        <p class="text-right text-muted mb-1">New Street</p>
-                        <p class="text-right text-muted mb-1">PH: XXXXX-XXX-XXX</p>
-                    </div>
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-5">
+                <h1>Hola</h1>
             </div>
-        </footer>
+            <div class="col-3">
+                <h1>Leo</h1>
+            </div>
+            <div class="col-4">
+                <h1>¿Cómo estás?</h1>
+            </div>
+            <div class="col-8">
+                <h1>contenido</h1>
+            </div>
+            <!-- <div class="col-4">
+                <h1>contenido</h1>
+            </div> -->
+            <div class="col-8">
+                <h1>contenido</h1>
+            </div>
+            <div class="col-2">
+                Contenido
+            </div>
+        </div>
+    </div>
 
-        <!--Dependencias de Bootstrap en JavaScript-->
-        
-    </body>
+</body>
 
 </html>
