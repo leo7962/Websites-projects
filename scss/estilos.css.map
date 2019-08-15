@@ -1,7 +1,9 @@
 {
-"version": 3,
-"mappings": "AAQA,UAAU;EACN,MAAM,EAAE,aAAa",
-"sources": ["estilos.scss"],
-"names": [],
-"file": "estilos.css"
+    "version": 3,
+    "mappings": "AAQA,AAAA,UAAU,CAAA;EACN,MAAM,EAAE,aAAa;CACxB;;AAMD,AAAA,IAAI,GAAC,CAAC,CAAA;EACF,MAAM,EAAE,aAAa;CACxB",
+    "sources": [
+        "estilos.scss"
+    ],
+    "names": [],
+    "file": "estilos.css"
 }

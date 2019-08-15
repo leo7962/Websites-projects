@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Bootstrap</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
 
-        <!--Aplicando estilos css-->
-        <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
-        <link type="text/css" rel="stylesheet" href="../css/estilos.css">
+    <!--Aplicando estilos css-->
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/estilos.css">
 
-        <!--Cargando los archivos Jquery y JavaScript-->
-        <script src="./jquery/jquery-3.4.1.js"></script>
-        <script src="./js/popper.min.js"></script>
-        <script src="./js/bootstrap.js"></script>
-    </head>
+    <!--Cargando los archivos Jquery y JavaScript-->
+    <script src="../jquery/jquery-3.4.1.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
 
-    <body>
+<body>
 
-        <!-- La clase row puede albergar máximo 12 columnas -->
-        <div class="container">
-            <!-- <h1>Hola Leo</h1> -->
-            <div class="row">
-                <div class="col-12 col-sm-4">Hola Mundo</div>
-                <div class="col-12 col-sm-4">Hola Mundo</div>
-                <div class="col-12 col-sm-4">Hola Mundo</div>
-                <div class="col-12 col-sm-4">Hola Mundo</div>
-                <div class="col-12 col-sm-4">Hola Mundo</div>
-                <div class="col-12 col-sm-4">Hola Mundo</div>
-                <div class="col-12 col-sm-4">Hola Mundo</div>
-                <div class="col-12 col-sm-4">Hola Mundo</div>
-                <div class="col-12 col-sm-4">Hola Mundo</div>
-                <div class="col-12 col-sm-4">Hola Mundo</div>
-                <div class="col-12 col-sm-4">Holas</div>
-                <div class="col-12 col-sm-4">Hola Mundo</div>
+    <!-- La clase row puede albergar máximo 12 columnas -->
+    <!-- modo de disposición resposive y espacio de columnas offset-sm-2 offset-md-3 -->
+    <div class="container">
+        <!-- <h1>Hola Leo</h1> -->
+        <div class="row">
+            <!-- <div class="col-6 ">
+                se puede anidar columnas dentro de otra columna, solo escribiendo dentro del div la clase Row
+                <div class="row">
+                    <div class="col-2">Contenido</div>
+                    <div class="col-10">Contenido</div>
+                </div>
             </div>
-
+            <div class="col-6">Contenido</div> -->
+            <!-- se asigna el orden de las columnas con order-first y order-last para asignar md o sm usa order-md-first -->
+            <!-- valores del 0 al 12 y los contextos son col SM MD LG XL -->
+            <div class="col-2 bg-primary order-md-2 order-xl-3">Contenido</div>
+            <div class="col-2 bg-secondary order-md-4 order-xl-2">Contenido</div>
+            <div class="col-2 bg-success order-md-0 order-xl-1">Contenido</div>
+            <div class="col-6 bg-danger order-md-1 order-xl-0">Contenido</div>
         </div>
 
+    </div>
 
+    <h1>Hola Leo</h1>
 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facilis velit voluptas error ab vitae
+        praesentium incidunt, natus id qui corrupti odio aliquam, commodi, dolor minus doloribus. Eligendi, et
+        accusamus?</p>
 
-
-    </body>
+</body>
 
 </html>

@@ -18,6 +18,31 @@ $secundario: orange;
     border: 1px solid red;
 }
 
+//Margin sirve para un espaciado externo
+//Pading para un espaciado interno
+
+
+p{
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 2rem;
+    border: .5rem solid red;
+    padding: .5rem;
+    margin: 3rem;
+}
+
+@media(min-witdh: 768px){
+    html{
+        font-size: 18px;
+    }
+
+}
+
+
+
+
 // .row>*{
 //     border: 3px solid green;
 // }
